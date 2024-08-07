@@ -1,13 +1,8 @@
 import express from "express";
 import bcrypt from "bcryptjs";
-import User from "../models/user.js";
+import User from "../models/user";
 
 const router = express.Router();
-
-// Example route
-router.get("/", (req, res) => {
-  res.json({ message: "Hello from API!" });
-});
 
 // Register API
 router.post("/register", async (req, res) => {
